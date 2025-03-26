@@ -12,6 +12,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
     <style>
+      /* navigation button style */
       .button {
         background-color: #FFDCF3;
         border: 1px solid white;
@@ -30,12 +31,12 @@
         background: #F3D1E7
       }
 
+      /* button positioning */
       .button1 {
         position: relative;
         float: right;
         margin-right: 25px;
       }
-
 
       body {
         font-family: "MonteCarlo", cursive;
@@ -47,33 +48,60 @@
         background-color: #FFDCF3;
       }
 
+      /* Cursive title style */
       h1 {
         font-family: "MonteCarlo", cursive;
-
-        position: absolute;
+      
+        position: relative;
         margin-left: 50px;
         top: 20px;
       }
 
+      /* subheading title style */
       h2 {
         font-family: "Italiana", sans-serif;
         font-size: 40px;
-        text-align: center;
-        position: relative;
-        top: 290px;
-        color: black;
-        z-index: 1;
       }
+
+      /* section title */
+      h3 {
+        font-family: "MonteCarlo", cursive;
+        margin-top: 50px;
+        font-size: 30px;
+      }
+
+      #LandingScreen {
+        h2 {
+          text-align: center;
+          margin: auto;
+          position: relative;
+          top: 290px;
+          width: 200px; 
+          color: black;
+          z-index: 1;
+
+        }
+      }
+
+      
     </style>
   </head>
 
   <body>
+    
+    <!--Linked Buttons-->
     <button class="button button1">Contact</button>
     <button class="button button1">Playground</button>
-    <button class="button button1">Projects</button>
+    <a href="https://wintahabol.github.io/projects-page/">
+      <button class="button button1">Projects</button>
+    </a>
 
+    <!--Page Title -->
+    <div id="LandingScreen">
+      <h1>Projects</h1>
+    </div>
 
-    <h1>Projects</h1>
+    
 
   </body>
 </html>
